@@ -1,0 +1,1 @@
+export const  API_URL:string = "https://headlesswp.teamgrid.co.in//wp-json/wp/v2/"

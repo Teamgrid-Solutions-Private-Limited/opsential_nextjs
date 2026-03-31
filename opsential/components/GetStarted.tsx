@@ -1,8 +1,5 @@
-import { getStartedData } from "@/lib/getStarted";
- 
-export default async function GetStarted() {
-  const data = await getStartedData();
-  if (!data) return null;
+export default async function GetStarted({ data }: { data: any }) {
+
  const formattedGsTitle = data?.gs_title
   ? data.gs_title
       .replace(/\r\n|\n/g, "<br />")

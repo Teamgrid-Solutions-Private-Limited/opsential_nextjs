@@ -1,7 +1,5 @@
-import { getFaeturesData } from "@/lib/features";
+export default async function Features({ data }: { data: any }) {
 
-export default async function Features() {
-  const data: any = await getFaeturesData();
 
   // ✅ Title formatting
   const formattedFeaturesTitle = data?.features_title

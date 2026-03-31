@@ -1,11 +1,8 @@
-import { getHeroData, getImageById } from "@/lib/hero";
+export default async function Hero({ data }: { data: any }) {
+ const formattedTitle = data.hero_title
+  ?.replace(/\r\n/g, "<br />") // line break fix
+  ?.replace("<span>", '<span class="text-gradient">'); // add gradient class
 
-export default async function Hero() {
-  const data = await getHeroData();
-  const formattedTitle = data.hero_title
-    ?.replace(/\r\n/g, "<br />") // line break fix
-    ?.replace("<span>", '<span class="text-gradient">'); // add gradient class
-  const imageUrl = await getImageById(data.hero_image);
   return (
     <>
       <section className="relative pt-36 pb-24 md:pt-48 md:pb-36 overflow-hidden">
@@ -74,11 +71,8 @@ export default async function Hero() {
               </div>
 
               <div className="h-[420px] overflow-hidden">
-                <img
-                  src={imageUrl}
-                  alt="Dashboard"
-                  className="screenshot-scroll w-full"
-                />
+               
+                <img src={data.hero_image_url} alt="Dashboard" className="screenshot-scroll w-full" />
               </div>
             </div>
           </div>
