@@ -32,7 +32,7 @@ export default async function GetStarted({ data }: { data: any }) {
                 className="step-num mx-auto mb-6"
                 style={{
                   backgroundColor: step.gs_theme_color,
-                  border: `1px solid ${step.gs_theme_color}`,
+                  border: `1.5px solid ${step.gs_theme_color}`,
                   color: step.gs_theme_color.replace(/0\.1\)/, "1)"), // make text visible
                 }}
               >

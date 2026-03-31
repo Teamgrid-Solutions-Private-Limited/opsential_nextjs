@@ -16,7 +16,7 @@ export default function ProductTabs({ data }: any) {
             className={`tab-btn font-mono text-[13px] px-5 py-2 rounded-full border transition-all duration-200 ${
               activeTab === index
                 ? "tab-active"
-                : "text-[#7a8291] hover:text-[#9ca3af]"
+                : "text-[#7a8291] border-[rgba(255,255,255,0.07)] hover:text-[#9ca3af]"
             }`}
           >
             {tab.product_tab_text}

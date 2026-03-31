@@ -17,7 +17,7 @@ export default async function Hero({ data }: { data: any }) {
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-20">
             {/* Badge */}
-            <div className="pill text-[#0EA5E9] border-[#0EA5E9]/20 bg-[rgba(14,165,233,0.10)] mb-6 anim">
+            <div className="pill text-[#0EA5E9] border border-[#0EA5E9]/20 bg-[rgba(14,165,233,0.10)] mb-6 anim">
               <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>
               <span>{data.hero_tagline}</span>
             </div>
