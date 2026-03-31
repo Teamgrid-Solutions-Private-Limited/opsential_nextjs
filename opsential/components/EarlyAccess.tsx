@@ -15,7 +15,7 @@
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
         <div className="card p-10 md:p-20 text-center max-w-3xl mx-auto reveal rounded-[24px]">
           {/* Tagline */}
-          <div className="pill text-[#0EA5E9] border-accent/20 bg-[rgba(14,165,233,0.10)] mb-6">
+          <div className="pill text-[#0EA5E9] border border-[#0EA5E9]/20 bg-[rgba(14,165,233,0.10)] mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>
             <span>{data.ls_tagline}</span>
           </div>
@@ -134,14 +134,14 @@
             </div>
  
             {/* Submit */}
-            <button className="w-full bg-[#0EA5E9] hover:bg-[#0284C7] text-white font-bold rounded-full px-7 py-3 transition-colors duration-200 text-sm">
+            <button className="w-full bg-[#0EA5E9] hover:bg-[#0284C7] text-white font-bold rounded-full px-7 py-3 transition-colors duration-200 text-sm pointer">
               Request Access
             </button>
           </form>
  
           {/* Footer text */}
           <p className="text-[13px] text-[#7a8291] mt-6 text-center">
-            No spam. No credit card. Just early access.
+            No spam. No credit card. Just early access to the future of DevOps.
           </p>
         </div>
       </div>

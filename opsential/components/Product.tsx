@@ -10,7 +10,7 @@ export default async function Product({ data }: { data: any }) {
           {/* Heading */}
           <div className="text-center max-w-2xl mx-auto mb-16 reveal">
             
-            <div className="pill text-[#0EA5E9] border-[#0EA5E9]/20 bg-[rgba(14,165,233,0.10)] mb-5">
+            <div className="pill text-[#0EA5E9] border border-[#0EA5E9]/20 bg-[rgba(14,165,233,0.10)] mb-5">
               <span>{data.product_tagline}</span>
             </div>
 
