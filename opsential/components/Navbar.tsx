@@ -4,7 +4,7 @@ import { getMenuData } from "@/lib/menus";
 export default async function Navbar() {
   const menu = await getMenuData();
 
-
+console.log("Menu Data:", menu); // Debugging line to check the structure of menu data
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[rgba(9,9,11,0.92)] backdrop-blur-[12px] border-b border-[rgba(255,255,255,0.06)]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">

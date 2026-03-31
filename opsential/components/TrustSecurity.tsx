@@ -33,7 +33,7 @@ const getIconData = (icon: string) => {
     <section id="security" className="py-28 md:py-40">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center max-w-2xl mx-auto mb-16 ">
+        <div className="text-center max-w-2xl mx-auto mb-16 reveal">
           <div className="pill text-[#3ecf8e] border-[#3ecf8e]/20 bg-[#3ecf8e]/10 mb-5">
             {data.tagline_tagline}
           </div>
@@ -54,7 +54,7 @@ const getIconData = (icon: string) => {
   const { icon, color, bg } = getIconData(item.tagline_icon);
 
   return (
-    <div key={idx} className="card p-6 text-center">
+    <div key={idx} className="card p-6 text-center reveal">
       {/* Icon */}
       <div
         className="w-11 h-11 rounded-xl flex items-center justify-center mx-auto mb-4"

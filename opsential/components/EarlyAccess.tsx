@@ -13,7 +13,7 @@
       />
  
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
-        <div className="card p-10 md:p-20 text-center max-w-3xl mx-auto rounded-[24px]">
+        <div className="card p-10 md:p-20 text-center max-w-3xl mx-auto reveal rounded-[24px]">
           {/* Tagline */}
           <div className="pill text-[#0EA5E9] border-accent/20 bg-[rgba(14,165,233,0.10)] mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-[#0EA5E9] animate-pulse"></span>

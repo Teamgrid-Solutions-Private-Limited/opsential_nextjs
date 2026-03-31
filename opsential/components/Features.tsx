@@ -1,6 +1,8 @@
-export default async function Features({ data }: { data: any }) {
+"use client";
+import { useReveal } from "@/hooks/useReveal";
+export default  function Features({ data }: { data: any }) {
 
-
+useReveal();
   // ✅ Title formatting
   const formattedFeaturesTitle = data?.features_title
     ? data.features_title
@@ -18,7 +20,7 @@ export default async function Features({ data }: { data: any }) {
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
           {/* Heading */}
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-16 reveal">
 
             {/* Badge */}
             <div className="pill inline-flex items-center gap-2 text-[#0EA5E9] border border-[#0EA5E9]/20 bg-[rgba(14,165,233,0.10)] mb-5 px-3 py-1 rounded-full">
@@ -49,7 +51,7 @@ export default async function Features({ data }: { data: any }) {
                 .replace("<svg", `<svg stroke="${solidColor}"`);
 
               return (
-                <div key={idx} className="card p-6 md:p-8 ">
+                <div key={idx} className="card p-6 md:p-8 reveal">
 
                   {/* Icon */}
                   <div
@@ -89,7 +91,7 @@ export default async function Features({ data }: { data: any }) {
 
           {/* Bottom CTA */}
           {data.features_bottom_content && (
-            <div className="mt-10 py-10 border-t border-[rgba(255,255,255,0.04)] text-center">
+            <div className="mt-10 py-10 border-t border-[rgba(255,255,255,0.04)] text-center reveal">
 
               <div
                 className="

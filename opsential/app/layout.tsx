@@ -12,7 +12,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
-      </head>
+      </head >
       <body>{children}</body>
     </html>
   );

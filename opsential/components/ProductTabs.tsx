@@ -8,7 +8,7 @@ export default function ProductTabs({ data }: any) {
   return (
     <>
       {/* Tabs */}
-      <div className="flex justify-center gap-2 mb-10">
+      <div className="flex justify-center gap-2 mb-10 reveal">
         {data.product_tab_links.map((tab: any, index: number) => (
           <button
             key={index}
@@ -25,7 +25,7 @@ export default function ProductTabs({ data }: any) {
       </div>
 
       {/* Tab Content */}
-      <div className="relative">
+      <div className="relative reveal">
         {data.product_tab_content.map((tabContent: any, index: number) => {
           // ✅ Ensure the image URL is used
           const imageUrl = tabContent.product_image_url || tabContent.product_image; 

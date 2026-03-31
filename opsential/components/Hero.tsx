@@ -1,4 +1,5 @@
 export default async function Hero({ data }: { data: any }) {
+  console.log("Hero data:", data); // Debugging line to check the structure of data
  const formattedTitle = data.hero_title
   ?.replace(/\r\n/g, "<br />") // line break fix
   ?.replace("<span>", '<span class="text-gradient">'); // add gradient class
