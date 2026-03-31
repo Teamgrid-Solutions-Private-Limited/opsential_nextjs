@@ -1,50 +1,25 @@
-'use client';
 
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import {  useEffect,  } from 'react';
+import Product from "@/components/Product";
+import GetStarted from "@/components/GetStarted"
+import TrustSecurity from "@/components/TrustSecurity";
+import EarlyAccess from "@/components/EarlyAccess";
+import Footer from "@/components/Footer";
 export default function Home() {
-  useEffect(() => {
-    // Scroll Reveal Intersection Observer
-    const revealObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            if (entry.target.classList.contains('stagger')) {
-              entry.target.querySelectorAll('.reveal').forEach(child => {
-                child.classList.add('active');
-              });
-            }
-            revealObserver.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.15,
-        rootMargin: '0px 0px -40px 0px'
-      }
-    );
-
-    document.querySelectorAll('.reveal, .stagger').forEach(el => {
-      revealObserver.observe(el);
-    });
-
-    return () => revealObserver.disconnect();
-  }, []);
 
   return (
     <main>
       <Navbar />
-      {/* <Hero /> */}
-      {/* <Features /> */}
-      {/* <Product />
-      <HowItWorks />
-      <Security />
+      <Hero />
+      <Features />
+      <Product />
+      <GetStarted />
+      <TrustSecurity />
       <EarlyAccess />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }

@@ -1,6 +1,6 @@
 export async function getFaeturesData() {
   const res = await fetch("https://headlesswp.teamgrid.co.in/wp-json/wp/v2/pages/56", {
-    cache: "no-store",
+   cache: "force-cache" 
   });
  
   if (!res.ok) {

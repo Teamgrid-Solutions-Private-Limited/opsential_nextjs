@@ -1,6 +1,6 @@
 export async function getHeroData() {
   const res = await fetch("https://headlesswp.teamgrid.co.in//wp-json/wp/v2/pages/56", {
-    cache: "no-store",
+   cache: "force-cache" 
   });
  
   if (!res.ok) {
@@ -19,3 +19,8 @@ export async function getHeroData() {
  
   return heroLayout;
 }
+export const getImageById = async (id:any) => {
+  const res = await fetch(`https://headlesswp.teamgrid.co.in/wp-json/wp/v2/media/${id}`);
+  const data = await res.json();
+  return data.source_url;
+};
