@@ -1,8 +1,7 @@
-import { getProductData } from "@/lib/product";
 import ProductTabs from "./ProductTabs";
  
-export default async function Product() {
-  const data = await getProductData();
+export default async function Product({ data }: { data: any }) {
+
   return (
     <>
       <section id="product" className="py-28 md:py-40">

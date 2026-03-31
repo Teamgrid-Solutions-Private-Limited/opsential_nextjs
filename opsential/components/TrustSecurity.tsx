@@ -1,8 +1,5 @@
-import { getTrustSecurityData } from "@/lib/trustSecurity";
- 
-export default async function TrustSecurity() {
-  const data = await getTrustSecurityData();
-  if (!data) return null;
+export default async function TrustSecurity({ data }: { data: any }) {
+
  const formattedTaglineTitle = data?.tagline_title
   ? data.tagline_title
       .replace(/\r\n|\n/g, "<br />")

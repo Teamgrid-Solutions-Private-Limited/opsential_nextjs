@@ -1,7 +1,5 @@
-import { getEarlyAccessData } from "@/lib/earlyAccess";
- 
-export default async function EarlyAccess() {
-  const data = await getEarlyAccessData();
+ export default async function EarlyAccess({ data }: { data: any }) {
+
  
   return (
     <section id="early-access" className="py-28 md:py-40 relative">
